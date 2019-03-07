@@ -3,6 +3,12 @@ Numbers is a two player game
 
 To run it, use terminal.
 
+Because this project uses nodemon pease install it before running server.
+
+To install nodemon type command: 'npm install -g nodemon'
+
+Then... 
+
 Go into project directory using 'cd' command.
 
 After you've done that simply type command:

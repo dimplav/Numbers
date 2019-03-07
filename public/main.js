@@ -104,10 +104,7 @@ function isRegularAnswer() {
 var global_timer;
 var global_timer1;
 
-// var player = 3;
-
 window.onload = function onEnter() {
-    // socket.emit('adding_player', { player: player });
     socket.emit('players', { igrac1: "", igrac2: "" });
     input = document.getElementById("equation");
     input.addEventListener("keyup", function (event) {
@@ -301,13 +298,6 @@ socket.on('players', (igrac) => {
 
     }
 });
-
-//temporarely commented function
-// socket.on('adding_player', (player) => {
-//     //console.log("stigao je id "+ player.player);
-//     playerID = player.player;
-// });
-// var playerID;
 
 function winner(first_player, second_player) {
     // var task = document.getElementById("task").value;
