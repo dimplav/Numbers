@@ -1,0 +1,150 @@
+#main_container{
+    width: 50%;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(122, 169, 195);
+    border-radius: 5px;
+}
+
+#numbers_container{
+    width: 90%;
+    height: 50px;
+    margin: 10px 5%;
+    background-color: #fff;
+    float:left;
+    /* we need to add float:left so top margin would work */
+    border-radius: 5px;
+}
+
+#player_result{
+    /* background-color: #fff; */
+    height:60px;
+    margin:10px 5%;
+    width:90%;
+    float:left;
+    text-align: center;
+}
+
+#numbers_container .single_digit{
+    height: 30px;
+    width: 30px;
+    margin: 10px 5px;
+    text-align: center;
+}
+
+#numbers_container .double_digit{
+    height: 30px;
+    width: 50px;
+    margin: 10px 5px;
+    float:right;
+    text-align: center;
+}
+
+#player_equation{
+    /* background-color: #fff; */
+    height:140px;
+    margin:10px 5%;
+    width:90%;
+    float:left;
+    text-align: center;
+}
+#equation{
+    width:100%;
+    height:50px;
+    font-size: 20px;
+    text-indent: 20px;
+    border-radius: 0 0 5px 5px;
+    border:none;
+    outline: none;
+}
+
+#player_task{
+    /* background-color: #fff; */
+    height:50px;
+    margin:10px 5%;
+    width:90%;
+    float:left;
+    text-align: center;
+}
+#task{
+    width:100px;
+    height:60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#progress_bar{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+}
+
+#my_progress{
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+}
+
+#result{
+    width:80px;
+    height:20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#opponent{
+    width:80px;
+    height:20;
+    font-size: 15px;
+    text-align: center;
+}
+
+#first_result{
+    float:left;
+}
+#second_result{
+    float:right;
+}
+
+#calculate_result{
+    margin-top:5px;
+}
+
+#chat{
+    width:90%;
+    margin: auto;
+    height: 150px;
+    display:none;
+}
+#chat_field{
+    overflow-y: scroll;
+    width:100%;
+    height: 80%;
+    background-color: #fff;
+}
+
+#show_chat{
+    margin-bottom: 5px;
+}
+
+#message{
+    width:100%;
+    margin-top: 5px;
+}
+#message input{
+    width:80%;
+}
+#message button{
+    float:right;
+}
+
+#new_task{
+    width: 100%;
+}
+#generate{
+    float:right;
+}
