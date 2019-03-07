@@ -27,10 +27,6 @@ io.on('connection', (socket) => {
         socket.username = data.username;
     });
 
-    socket.on('adding_player', (player) => {
-        io.emit('players', { igrac1: players[0], igrac2: players[1] });
-    });
-
     socket.on('new_message', (data) => {
         io.emit('new_message', { message: data.message, username: socket.username });
     });
