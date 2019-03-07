@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Numbers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="new_task">
+            <input type="text" id="username">
+            <button id="button_username" onclick="sendUsername()">Confirm </button>
+            <button id="generate" onclick="generate_random_number()">Generate task</button>
+        </div>
+        <div id="numbers_container">
+            <button class="single_digit" onclick="stop0()">0</button>
+            <button class="single_digit" onclick="stop1()">0</button>
+            <button class="single_digit" onclick="stop2()">0</button>
+            <button class="single_digit" onclick="stop3()">0</button>
+            <button class="double_digit" onclick="stop5()">00</button>
+            <button class="double_digit" onclick="stop4()">00</button>
+        </div>
+        <hr>
+        <div id="player_task">
+            <input type="text" disabled id="task">
+        </div>
+        <div id="player_equation">
+            <div id="progress_bar">
+                <div id="my_progress"></div>
+            </div>
+            <input type="text" id="equation">
+            <button id="calculate_result" onclick="checkAnswer(),isRegularAnswer(),sendNumber()">DONE!</button>
+        </div>
+        <hr>
+        <div id="player_result">
+            <div id="first_result">
+                <label for="result">Your result</label>
+                <input type="text" disabled id="result">
+            </div>
+            <div id="second_result">
+                <label for="opponent">Opponents result</label>
+                <input type="text" disabled id="opponent">
+            </div>
+        </div>
+        <button id="show_chat" onclick="showChat()">Show Chat!</button>
+        <div id="chat">
+            <div id="chat_field">
+
+            </div>
+            <div id="message">
+                <input type="text" id="message_input">
+                <button id="message_button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
